@@ -1,0 +1,30 @@
+important link :
+
+https://sigmdel.ca/michel/ha/opi/sound_output_02_en.html
+
+
+commands: 
+
+1 : sudo apt install moc moc-ffmpeg-plugin
+
+2 : cd $home
+
+3 : ls -a .moc
+
+4 : mkdir .moc
+
+5 : gunzip -c /usr/share/doc/moc/examples/config.example.gz > .moc/config
+
+6 : vim .moc/config
+
+	change lines to 
+	SoundDriver = ALSA
+	ALSADevice = default
+	ALSAMixer1 = "Line Out"
+	ALSAMixer2 = DAC
+	
+	The second was a bit more problematic. In the end, all that needed to be done was to play a longish wav file with aplay in one terminal and to start up alsamixer in another terminal to find the names given to the "mixers" that controlled the volume.
+
+Using the Console
+
+michel@opiz:~$ mocp
