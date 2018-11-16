@@ -1,0 +1,9 @@
+OpenCV :
+      pip install opencv-python
+      pip install opencv-contrib-python
+      python
+            import cv2
+            print(__version__)
+      
+Virtual Environment :
+      virtualenv -p /usr/bin/python2.7 vetr
