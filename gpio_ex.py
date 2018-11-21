@@ -8,7 +8,7 @@ import logging
 
 GPIO.setmode(GPIO.BOARD)
 '''
-
+linux gpio number = (gpio_bank - 1) * 32 + gpio_bit
 BOARD = {
     3: 12,    # I2C0_SDA/PA12 (TWI0_SDA/DI_RX/PA_EINT12)
     5: 11,    # I2C0_SCL/PA11 (TWI0_SCK/DI_TX/PA_EINT11)
