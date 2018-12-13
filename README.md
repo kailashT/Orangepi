@@ -1,6 +1,11 @@
 # Orangepi
 code snippets for python
 
+FOR BOOTing and To get customised Armbian
+  see file ArmbianBuild.txt
+  
+
+
 For I2C :
 
 https://www.abelectronics.co.uk/kb/article/1061/i2c--smbus-and-armbian-linux
