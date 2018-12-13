@@ -1,0 +1,30 @@
+#######   orange pi build Armbian download  #######
+apt-get -y install git
+git clone https://github.com/armbian/build
+cd build
+./compile.sh
+
+
+#######   orange pi build  #######
+Path :: "/home/u16/Armbian/build"
+
+#######  To build  #######
+./compile.sh
+>>>> Full OS image for flashing
+>>>>>>>>> Do not show config
+>>>>>>>>>>>>>> Orange pi
+>>>>>>>>>>>>>>>>>>> kernel 4.x
+>>>>>>>>>>>>>>>>>>>>>>> Debian 9
+
+#######  To Check  #######
+Path :: ./output/images
+path Ex. :: /home/u16/Armbian/build/output/images
+
+File ::  Armbian_<device name>.img
+File :: Armbian_5.41_Orangepione_Debian_jessie_next_4.14.41.img
+
+
+#######  To Deploy   #######
+
+sudo dd if="Armbian_<device name>.img" of="/dev/<sd card mount point>" 
+sudo dd if="Armbian_5.41_Orangepione_Debian_jessie_next_4.14.41.img" of="/dev/sdb" 
